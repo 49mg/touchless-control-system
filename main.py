@@ -115,11 +115,11 @@ class VirtualMouse:
         index_tip = hand_landmarks.landmark[mp_hands.HandLandmark.INDEX_FINGER_TIP]
         middle_tip = hand_landmarks.landmark[mp_hands.HandLandmark.MIDDLE_FINGER_TIP]
         ring_tip = hand_landmarks.landmark[mp_hands.HandLandmark.RING_FINGER_TIP]
-        pinky_tip = hand_landmarks.landmark[mp_hands.HandLandmark.PINKY_FINGER_TIP]
+        pinky_tip = hand_landmarks.landmark[mp_hands.HandLandmark.PINKY_TIP]
         index_pip = hand_landmarks.landmark[mp_hands.HandLandmark.INDEX_FINGER_PIP]
         middle_pip = hand_landmarks.landmark[mp_hands.HandLandmark.MIDDLE_FINGER_PIP]
         ring_mcp = hand_landmarks.landmark[mp_hands.HandLandmark.RING_FINGER_MCP]
-        pinky_mcp = hand_landmarks.landmark[mp_hands.HandLandmark.PINKY_FINGER_MCP]
+        pinky_mcp = hand_landmarks.landmark[mp_hands.HandLandmark.PINKY_MCP]
 
         dist_index = math.hypot(index_tip.x - thumb_tip.x, index_tip.y - thumb_tip.y)
         dist_middle = math.hypot(middle_tip.x - thumb_tip.x, middle_tip.y - thumb_tip.y)
